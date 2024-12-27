@@ -1,9 +1,11 @@
 // ignore: file_names
+// ignore_for_file: non_constant_identifier_names
+
 import 'dart:convert';
 
 class Aba{
-  static String CH_A = "阿";
-  static String CH_B = "巴";
+  static String CH_A = "喵";
+  static String CH_B = "~";
   static String CH_DIV = " ";
 
   static Map<String , String> chMap = <String,String>{};
@@ -75,11 +77,10 @@ class Aba{
       List<int> byteList = [];
       for(String s in binStrList){
         int? numValue = int.tryParse(s, radix: 2);
-        print("numValue = $numValue");
         byteList.add(numValue??0);
       }
       String chStr = utf8.decode(byteList);
-      print("chStr = $chStr");
+      // print("chStr = $chStr");
       result += chStr;
     }//end for each
     return result;

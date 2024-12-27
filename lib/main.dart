@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: '阿巴聊天器'),
+      home: const MyHomePage(title: '喵语转换器'),
     );
   }
 }
